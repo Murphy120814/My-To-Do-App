@@ -7,7 +7,7 @@ function ToDOItem({ task, setToDoTaskList }) {
   const [doneItem, setDoneItem] = useState(false);
 
   return (
-    <div className="w-full bg-slate-300 shadow-xl text-lg rounded-xl my-4 p-4 flex justify-between items-center">
+    <div className="w-full bg-slate-300 dark:text-black shadow-lg dark:shadow-slate-600 text-lg rounded-xl my-4 p-4 flex justify-between items-center">
       <span className={doneItem && "line-through"}>{task}</span>
       <div className="flex justify-center items-center gap-2">
         <img
